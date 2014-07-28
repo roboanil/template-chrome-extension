@@ -1,0 +1,12 @@
+@media (max-width : 600px)
+{
+	.TopMenu, .Name, .CopyRight
+	{
+		text-align: center;
+	}
+	.LBox, .RBox
+	{
+		float: none;
+		width: 100%;
+	}
+}

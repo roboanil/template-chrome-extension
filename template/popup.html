@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="description" content="">
+		<meta name="author" content="Anil">
+		<title>Create template</title>
+		<script src="popup.js"></script>
+		<script src="jquery.js"></script>
+		<script src="FileSaver.js"></script>
+		<style>
+			div.ex {
+				width: 293px;
+				border: 1px solid gray;
+				margin: 0px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="searchC">
+			<input id="contentT" placeholder="Enter the content ID" value=""/>
+			<button id="createT">
+				Create
+			</button>
+			<div id="error" style="display: none">
+				Error messages
+			</div>
+		</div>
+
+		<div id="tabs" style="display: none">
+			<label for="filename">Filename</label>
+			<br />
+			<input id="filename" type="text" name="filename" value="testfile.txt" id="filename" />
+			<br />
+			<div class="ex">
+			<button id="homeT">
+				Home Page
+			</button>
+			<button id="catT">
+				Category Page
+			</button>
+			<button id="articleT">
+				Article Page
+			</button>
+			</div>
+		</div>
+
+		<div id="homeP" style="display: none">
+			<input type="file" id="files1" name="file" />
+			<button class="readBytesButtons">
+				Load
+			</button>
+			<button class="addContent">
+				Add Article to Home Page
+			</button>
+			<br />
+			<label for="data">File Contents</label>
+			<br />
+			<div style="width:48%; margin:0; padding:0;display:inline-block;">
+				<textarea cols="60" rows="28" name="data" id="databox1" style="width:98%; resize:none;">Home Page Source</textarea>
+			</div>
+			<div id="databox2" style="border:1px solid #D6D6D6; display:inline-block;clear:none;vertical-align:top; width:48%;height:28.25em; overflow:scroll; margin-top:2px;">
+				Home Page View
+			</div>
+		</div>
+
+		<div id="catP" style="display: none">
+			<input type="file" id="files2" name="file" />
+			<button class="readBytesButtons">
+				Load
+			</button>
+			<button class="addContent">
+				Add Article to Category Page
+			</button>
+			<br />
+			<label for="data">File Contents</label>
+			<br />
+			<div style="width:48%; margin:0; padding:0;display:inline-block;">
+				<textarea cols="60" rows="28" name="data" id="databox3" style="width:98%; resize:none;">Category Page Source</textarea>
+			</div>
+			<div id="databox4" style="border:1px solid #D6D6D6; display:inline-block;clear:none;vertical-align:top; width:48%;height:28.25em; overflow:scroll; margin-top:2px;">
+				Category Page View
+			</div>
+		</div>
+
+		<div id="articleP" style="display: none">
+			<input type="file" id="files3" name="file" />
+			<button class="readBytesButtons">
+				Load
+			</button>
+			<button class="addContent">
+				Create Article Page
+			</button>
+			<br />
+			<label for="data">File Contents</label>
+			<br />
+			<div style="width:48%; margin:0; padding:0;display:inline-block;">
+				<textarea cols="60" rows="28" name="data" id="databox5" style="width:98%; resize:none;">Article Page Source</textarea>
+			</div>
+			<div id="databox6" style="border:1px solid #D6D6D6; display:inline-block;clear:none;vertical-align:top; width:48%;height:28.25em; overflow:scroll; margin-top:2px;">
+				Article Page View
+			</div>
+		</div>
+
+		<div id="fileOptions" style="display: none">
+			<button id="saveBut">
+				Save
+			</button>
+			<button id="viewBut">
+				View
+			</button>
+			<div id="fez" style="display: none"></div>
+		</div>
+
+	</body>
+</html>
